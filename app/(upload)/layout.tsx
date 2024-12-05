@@ -8,47 +8,35 @@ export default function Layout({
     <>
       <header className="mb-8">
         <h1 className="font-bold text-4xl lg:text-5xl mb-2">
-          Welcome to Mux + Next.js
+          Multimídia
         </h1>
-        <p className="italic">Get started by uploading a video</p>
+        <p className="italic">Upload e playback de vídeo</p>
       </header>
       <p className="mb-4">
+        Esse trabalho utiliza o{" "}
         <Link
           href={MUX_HOME_PAGE_URL}
           target="_blank"
           rel="noopener noreferrer"
         >
           Mux
-        </Link>{" "}
-        provides APIs for developers working with video.
+        </Link>
+        , que fornece uma API para trabalhar com vídeos:
         <br />
-        This example is useful if you want to build:
       </p>
       <ul className="list-disc pl-8 mb-4">
-        <li>A video on demand service like Youtube or Netflix</li>
+        <li>Vídeos para serviços on-demand como Youtube ou Netflix</li>
         <li>
-          A platform that supports user uploaded videos like TikTok or Instagram
-        </li>
-        <li>Video into your custom CMS</li>
+          Plataforma para upload de vídeos
+        </li> 
+        <li>Web pages para multimídia personalizada</li>
       </ul>
       <p className="mb-4">
-        Uploading a video uses the Mux{" "}
+        Fazer upload usa a{" "}
         <Link href="https://docs.mux.com/docs/direct-upload">
-          direct upload API
+          API de upload direta do Mux
         </Link>
-        . When the upload is complete your video will be processed by Mux and
-        available for playback on a sharable URL.
-      </p>
-      <p>
-        To learn more,{" "}
-        <Link
-          href="https://github.com/vercel/next.js/tree/canary/examples/with-mux-video"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          check out the source code on GitHub
-        </Link>
-        .
+        . Quando um upload é completo, o Mux processa seu vídeo e fornece uma URL para playback.
       </p>
       <hr className="my-8 bg-gray-500" />
       {children}
